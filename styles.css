@@ -134,11 +134,6 @@ fieldset {
 input[type="radio"]:checked {
   accent-color: var(--Green-600);
 }
-/* input[type='radio']:checked 
-.radio-container {
-  border: 1px solid var(--Green-600);
-  background-color: var(--Green-200);
-} */
 .radio-label {
   cursor: pointer;
 }
