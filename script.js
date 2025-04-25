@@ -77,14 +77,14 @@ inputs.forEach((input) => {
 });
 
 // error checkbox
-checkbox.addEventListener("click", (event) => {
-  const required = event.target.closest(".section").querySelector(".required");
-  if (checkbox.checked) {
-    required.style.display = "none";
-  } else {
-    required.style.display = "block";
-  }
-});
+// checkbox.addEventListener("click", (event) => {
+//   const required = event.target.closest(".section").querySelector(".required");
+//   if (checkbox.checked) {
+//     required.style.display = "none";
+//   } else {
+//     required.style.display = "block";
+//   }
+// });
 
 // Regular expression for email validation as per HTML specification
 const emailRegExp =
