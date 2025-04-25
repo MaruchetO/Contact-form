@@ -35,8 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://marucheto.github.io/Contact-form/](https://marucheto.github.io/Contact-form/)
 
 ## My process
 
@@ -57,7 +56,13 @@ input[type="radio"]:checked {
   accent-color: var(--Green-600);
 }
 ```
+
 ```js
+const emailRegExp =
+  // Email Address Regular Expression
+  // https://emailregex.com/index.html
+  /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
+
 // Error radio
 // https://www.javascripttutorial.net/javascript-dom/javascript-radio-button/
 const radioError = document.querySelector(".radio_error");
@@ -75,6 +80,7 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 ### Useful resources
 
 - [Form validation](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation)
+- [Email Address Regular Expression](https://emailregex.com/index.html)
 - [JavaScript Radio Button](https://www.javascripttutorial.net/javascript-dom/javascript-radio-button/)
 
 ## Author
