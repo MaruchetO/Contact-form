@@ -33,7 +33,7 @@ inputs.forEach((input) => {
       selectedOne.style.border = "1px solid var(--Grey-500)";
       selectedOne.style.backgroundColor = "transparent";
     }
-    
+
     if (radioTwo.checked) {
       selectedTwo.style.border = "1px solid var(--Green-600)";
       selectedTwo.style.backgroundColor = "var(--Green-200)";
@@ -88,7 +88,9 @@ checkbox.addEventListener("click", (event) => {
 
 // Regular expression for email validation as per HTML specification
 const emailRegExp =
-  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  // Email Address Regular Expression
+  // https://emailregex.com/index.html
+  /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
 
 // Check if the email is valid
 const isValidEmail = () => {
@@ -143,11 +145,6 @@ const handleSubmit = (event) => {
   selectedTwo.style.backgroundColor = "transparent";
 };
 
-// Now we can rebuild our validation constraint
-// Because we do not rely on CSS pseudo-class, we have to
-// explicitly set the valid/invalid class on our email field
 window.addEventListener("load", initializeValidation);
-// This defines what happens when the user types in the field
 email.addEventListener("input", handleInput);
-// This defines what happens when the user tries to submit the data
 form.addEventListener("submit", handleSubmit);
