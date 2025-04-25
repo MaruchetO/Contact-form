@@ -76,9 +76,12 @@ form {
   border: 1px solid var(--Grey-500);
   border-radius: 8px;
 }
-.text:focus, .text:hover,
-#email-id:focus, #email-id:hover,
-.text-area:focus, .text-area:hover {
+.text:focus,
+.text:hover,
+#email-id:focus,
+#email-id:hover,
+.text-area:focus,
+.text-area:hover {
   outline: 1px solid var(--Green-600);
 }
 .text,
@@ -99,6 +102,9 @@ form {
   border-radius: 8px;
 }
 
+fieldset {
+  border: none;
+}
 .options-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -125,7 +131,7 @@ form {
 }
 /* Change radio color - accent-color */
 /* https://stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons */
-input[type='radio']:checked {
+input[type="radio"]:checked {
   accent-color: var(--Green-600);
 }
 /* input[type='radio']:checked 
@@ -214,7 +220,9 @@ input[type='radio']:checked {
   color: var(--Red);
   margin-top: 10px;
 }
-.text:user-invalid, #email-id:user-invalid, .text-area:user-invalid {
+.text:user-invalid,
+#email-id:user-invalid,
+.text-area:user-invalid {
   border: 1px solid var(--Red);
 }
 
